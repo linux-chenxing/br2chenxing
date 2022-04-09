@@ -1,1 +1,18 @@
 source "$BR2_EXTERNAL_CHENXING_PATH/package/snander/Config.in"
+
+# Default u-boot opts
+config BR2_TARGET_UBOOT_CUSTOM_REPO_URL
+	default "https://github.com/linux-chenxing/u-boot.git"
+
+config BR2_TARGET_UBOOT_SPL_NAME
+	default "ipl"
+
+# Default kernel opts
+config BR2_LINUX_KERNEL_CUSTOM_REPO_URL
+	default "https://github.com/linux-chenxing/linux.git"
+
+config BR2_LINUX_KERNEL_CUSTOM_REPO_VERSION
+	default "mstar_v5_18_rebase"
+
+config BR2_LINUX_KERNEL_DTS_SUPPORT
+	default y
