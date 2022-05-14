@@ -16,7 +16,7 @@ config BR2_TARGET_UBOOT_CUSTOM_REPO_URL
 	default "https://github.com/linux-chenxing/u-boot.git"
 
 config BR2_TARGET_UBOOT_CUSTOM_REPO_VERSION
-	default	"mstar_rebase_mainline_20220409"
+	default	"mstar_rebase_mainline_20220513"
 
 config BR2_TARGET_UBOOT_SPL_NAME
 	default "ipl"
