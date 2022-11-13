@@ -1,0 +1,2 @@
+#Busybox's wget isn't very useful now everything wants https
+CONFIG_WGET=n
