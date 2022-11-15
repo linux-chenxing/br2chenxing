@@ -1,4 +1,5 @@
 source "$BR2_EXTERNAL_CHENXING_PATH/package/snander/Config.in"
+source "$BR2_EXTERNAL_CHENXING_PATH/package/libge/Config.in"
 
 config BR2_CHENXING
 	bool

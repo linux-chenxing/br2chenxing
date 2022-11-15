@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBGE
+        bool "libge"
+	help
+	  libge
