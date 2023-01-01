@@ -1,0 +1,6 @@
+config BR2_PACKAGE_DIRECTFB2_GE
+        bool "directfb-ge"
+	depends on BR2_PACKAGE_DIRECTFB2
+	select BR2_PACKAGE_LIBGE
+	help
+	  DirectFB2 driver for GE
