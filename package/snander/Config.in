@@ -1,5 +1,17 @@
+config BR2_PACKAGE_SNANDER
+        bool "snander"
+	depends on BR2_HOST_GCC_AT_LEAST_4_9 # host-libusb
+	help
+	  SNANDer
+
+config BR2_PACKAGE_SNANDER_MSTARDDC
+        bool "mstar ddc supprt"
+	depends on BR2_PACKAGE_SNANDER
+	help
+	  Add support for MStar DDC for flashing over i2c
+
 config BR2_PACKAGE_HOST_SNANDER
         bool "host_snander"
 	depends on BR2_HOST_GCC_AT_LEAST_4_9 # host-libusb
 	help
-	  SNANDer
+	  SNANDer host package

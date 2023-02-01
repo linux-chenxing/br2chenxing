@@ -4,13 +4,15 @@
 #
 ################################################################################
 
-SNANDER_VERSION = 1d2442a94d71ddd0b73764317f775774aa2f9a8c
+SNANDER_VERSION = ab1f4356e5a3dffa49fe42ce5d0da0a7734f171f
 SNANDER_SITE = https://github.com/fifteenhex/SNANDer.git
 SNANDER_SITE_METHOD = git
+SNANDER_SUBDIR = src
 HOST_SNANDER_DEPENDENCIES = host-pkgconf host-libusb host-libusb-compat
 
-define HOST_SNANDER_BUILD_CMDS
-	$(MAKE) PKG_CONFIG=$(HOST_DIR)/bin/pkgconf -C $(@D)/src
-endef
+ifeq ($(BR2_PACKAGE_SNANDER_MSTARDDC),y)
+SNANDER_CONF_OPTS += -Dmstar_ddc=true
+endif
 
-$(eval $(host-generic-package))
+$(eval $(meson-package))
+$(eval $(host-meson-package))

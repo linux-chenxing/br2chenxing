@@ -1,0 +1,9 @@
+config BR2_PACKAGE_MSTARBINTOOLS
+        bool "mstarbintools"
+	help
+	  Tools for creating/manipulating mstar binaries
+
+config BR2_PACKAGE_HOST_MSTARBINTOOLS
+        bool "host_mstarbintools"
+	help
+	  Tools for creating/manipulating mstar binaries. Host
