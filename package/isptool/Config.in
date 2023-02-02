@@ -1,0 +1,10 @@
+config BR2_PACKAGE_ISPTOOL
+        bool "isptool"
+	depends on BR2_PACKAGE_PYTHON_PERIPHERY
+	help
+	  Tool for interacting with mstar chips over the isp
+
+config BR2_PACKAGE_HOST_ISPTOOL
+        bool "host_isptool"
+	help
+	  Tool for interacting with mstar chips over the isp. Host

@@ -2,6 +2,7 @@ source "$BR2_EXTERNAL_CHENXING_PATH/package/snander/Config.in"
 source "$BR2_EXTERNAL_CHENXING_PATH/package/libge/Config.in"
 source "$BR2_EXTERNAL_CHENXING_PATH/package/directfb2-ge/Config.in"
 source "$BR2_EXTERNAL_CHENXING_PATH/package/mstarbintools/Config.in"
+source "$BR2_EXTERNAL_CHENXING_PATH/package/isptool/Config.in"
 
 config BR2_CHENXING
 	bool
